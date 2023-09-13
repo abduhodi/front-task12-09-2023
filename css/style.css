@@ -55,7 +55,7 @@ hr {
 }
 /* -------------common classes------------*/
 .main {
-  width: 100%;
+  min-width: 1220px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
