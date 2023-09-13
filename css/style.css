@@ -55,7 +55,7 @@ hr {
 }
 /* -------------common classes------------*/
 .main {
-  min-width: 1220px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -403,4 +403,168 @@ hr {
   font-style: normal;
   font-weight: 400;
   line-height: 24px; /* 171.429% */
+}
+
+@media (max-width: 1200px) {
+  /* common */
+  .container {
+    width: 950px;
+  }
+
+  /* home */
+  .home__cards {
+    gap: 15px;
+  }
+
+  .home__cards .card {
+    width: calc(33% - 10px);
+  }
+
+  /* latest */
+  .mini {
+    width: calc(33% - 15px);
+  }
+
+  /* footer */
+  .footer {
+    padding: 50px 0px;
+  }
+}
+
+@media (max-width: 990px) {
+  /* common */
+  .container {
+    width: 740px;
+  }
+
+  /* home */
+
+  .home__main-page__text h1 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .home__cards {
+    gap: 5px;
+  }
+
+  .home__cards .card {
+    width: calc(33% - 1px);
+  }
+
+  /* latest */
+  /* .mini {
+    width: calc(50% - 15px);
+  } */
+
+  .latest .posts .card {
+    width: calc(50% - 10px);
+  }
+
+  /* footer */
+  .footer {
+    padding: 50px 0px;
+  }
+}
+@media (max-width: 767px) {
+  /* common */
+  .container {
+    width: 100vw;
+    padding: 0 20px;
+  }
+  /* navbar */
+  .navbar-logo {
+    display: none;
+  }
+  .navbar-navigator {
+    margin: 0 auto;
+  }
+
+  /* home */
+  .home {
+    padding-top: 30px;
+  }
+  .home__main-page {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .home__main-page__img {
+    width: 100%;
+  }
+  .home__main-page__text {
+    width: 100%;
+  }
+
+  .home__main-page__text h1 {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  .home__cards {
+    gap: 5px;
+  }
+
+  .home__cards .card {
+    width: calc(50% - 4px);
+  }
+  .card-text {
+    font-size: 12px;
+  }
+  .card__img {
+    height: 150px;
+    object-fit: cover;
+  }
+
+  .large {
+    width: calc(100%);
+  }
+  .large-post {
+    height: 300px;
+  }
+  .card__text {
+    margin-top: 10px;
+  }
+
+  .latest .posts .card {
+    width: calc(50% - 10px);
+  }
+
+  .posts-view-btn button {
+    padding: 13px 15px;
+    font-size: 8px;
+  }
+  /* featured posts */
+
+  .featured {
+    padding-top: 30px;
+  }
+
+  /* footer */
+  .footer {
+    padding: 50px 0px;
+  }
+  .footer-nav__category {
+    width: 100%;
+  }
+  .footer-nav__category ul li {
+    width: 50%;
+    padding-top: 15px;
+  }
+  .footer-nav__subscribe {
+    width: 50%;
+  }
+  .footer-nav__subscribe form input {
+    font-size: 10px;
+    line-height: 10px; /* 120% */
+    padding: 10px 14px;
+  }
+  .footer-nav__subscribe form button {
+    padding: 12px 14px;
+    font-size: 10px;
+    line-height: 10px; /* 120% */
+  }
+  .footer-nav__links {
+    width: 100%;
+  }
+  .link-item {
+    width: 33%;
+  }
 }
